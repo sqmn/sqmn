@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Square Moon Enterprises LTD</title>
+
+	<!-- WebApp Stuff
+	================================================================================================================== -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name='viewport' content='viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1'>
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="Square Moon Enterprises LTD">
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+<!--	<link rel="manifest" href="/manifest.json">-->
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<style>
+
+        /*@font-face {*/
+        /*    font-family : 'Sandoval';*/
+        /*    src         : url('assets/fonts/Sandoval-Regular.eot');*/
+        /*    src         : url('assets/fonts/Sandoval-Regular.eot?#iefix') format('embedded-opentype'),*/
+        /*    url('assets/fonts/Sandoval-Regular.woff') format('woff'),*/
+        /*    url('assets/fonts/Sandoval-Regular.ttf') format('truetype'),*/
+        /*    url('assets/fonts/Sandoval-Regular.woff2') format('woff2'),*/
+        /*    url('assets/fonts/Sandoval-Regular.svg') format('svg');*/
+        /*    }*/
+
+		/*@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,500;1,700&display=swap');*/
+
+		@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@600&display=swap"');
+
+		html, body {
+			background-color    : #292931;
+			background-image    : url("assets/background/bg2.jpg");
+			background-size     : cover; /* <------ */
+			background-repeat   : no-repeat;
+			background-position : center center;
+			height              : 100%;
+			padding             : 0;
+			margin              : 0;
+		}
+
+		.container {
+			display         : flex;
+			flex-direction  : column;
+			align-items     : center;
+			justify-content : center;
+			row-gap: 40px;
+			height          : 100%;
+		}
+
+		.image {
+			margin    : 0;
+			max-width : 250px;
+		}
+
+		.text {
+			font-family: 'Geologica', sans-serif;
+			/*font-family: 'IBM Plex Sans', sans-serif;*/
+			color                     : #ababab;
+			/*-webkit-text-stroke-width : 1px;*/
+			/*-webkit-text-stroke-color : #999999;*/
+			/*background                : -webkit-linear-gradient(#424242, #000000);*/
+			/*-webkit-background-clip   : text;*/
+			/*-webkit-text-fill-color   : transparent;*/
+			/*text-shadow: 0 0 4px #a7a7a7;*/
+			margin                    : 0;
+			font-size                 : 4vw;
+			max-width                 : 75vw;
+			text-align                : center;
+		}
+
+		.text-email {
+			font-family: 'Geologica', sans-serif;
+			color                     : #ababab;
+			/*-webkit-text-stroke-width : 1px;*/
+			/*-webkit-text-stroke-color : #999999;*/
+			/*background                : -webkit-linear-gradient(#424242, #000000);*/
+			/*-webkit-background-clip   : text;*/
+			/*-webkit-text-fill-color   : transparent;*/
+			/*text-shadow: 0 0 4px #a7a7a7;*/
+			margin                    : 0;
+			font-size                 : 3vw;
+			max-width                 : 75vw;
+			text-align                : center;
+		}
+
+		@media (min-width : 576px) {
+			.image {
+				max-width : 60vw;
+			}
+
+			.text {
+				font-size : 4vw;
+				max-width : 75vw;
+			}
+
+			.text-email{
+				font-size :3vw;
+				max-width : 75vw;
+			}
+		}
+
+		/*Medium devices (tablets, 768px and up)*/
+		@media (min-width : 768px) {
+			.image {
+				max-width : 250px;
+			}
+
+			.text {
+				font-size : 3.5vw;
+				max-width : 50vw;
+			}
+
+			.text-email{
+				font-size : 3vw;
+				max-width : 50vw;
+			}
+		}
+
+		/*Large devices (desktops, 992px and up)*/
+		@media (min-width : 992px) {
+			.image {
+				max-width : 250px;
+			}
+
+			.text {
+				font-size : 2.5vw;
+				max-width : 50vw;
+			}
+
+			.text-email{
+				font-size : 2vw;
+				max-width : 90vw;
+			}
+		}
+
+		/*Extra large devices (large desktops, 1200px and up)*/
+		@media (min-width : 1200px) {
+			.image {
+				max-width : 250px;
+			}
+			.text {
+				font-size : 1.5vw;
+				max-width : 50vw;
+			}
+
+			.text-email{
+				font-size : 1vw;
+				max-width : 90vw;
+			}
+
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<a href="https://squaremoon.io" target="_self"><img class="image" alt="squaremoon logo" src="assets/Squaremoon_Logo_white.png"></a>
+	<p style="text-rendering : optimizeLegibility; font-family: 'Geologica', sans-serif" class="text">Square Moon Enterprises LTD</p>
+	<p style="text-rendering : optimizeLegibility; font-family: 'Geologica', sans-serif" class="text">7 Thiseos, Strovolos, 2042 Nicosia, Cyprus </p>
+	<a style="text-rendering : optimizeLegibility; font-family: 'Geologica', sans-serif" class="text-email" href="mailto:office@squaremoon.io">office@squaremoon.io</a>
+</div>
+</body>
+</html>
