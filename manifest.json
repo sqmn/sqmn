@@ -1,6 +1,11 @@
 {
  "name": "squaremoon",
+ "theme_color": "#020f18",
+ "background_color": "#303030",
+ "display": "fullscreen",
  "version" : "1.0.0",
+ "scope": ".",
+ "start_url": ".",
  "icons": [
   {
    "src": "\/assets/icons/android-icon-36x36.png",
